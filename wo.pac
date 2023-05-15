@@ -10,7 +10,8 @@ function FindProxyForURL(url, host)
 
   if (shExpMatch(host, "*.oracle.com") ||
       shExpMatch(host, "*.oraclecorp.com") ||
-      shExpMatch(host, "*.oraclevcn.com"))
+      shExpMatch(host, "*.oraclevcn.com") ||
+      shExpMatch(host, "*.oracleiaas.com"))
     return "SOCKS5 127.0.0.1:20090";
 
   return "DIRECT";
