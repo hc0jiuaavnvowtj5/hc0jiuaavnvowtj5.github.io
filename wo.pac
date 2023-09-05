@@ -4,6 +4,7 @@ function FindProxyForURL(url, host)
       shExpMatch(host, "mysites.oracle.com") ||
       shExpMatch(host, "people.oracle.com") ||
       shExpMatch(host, "docs.oracle.com") ||
+      shExpMatch(host, "oradocs.oracle.com") ||
       shExpMatch(host, "app.internalcomms.oracle.com") ||
       shExpMatch(host, "app.oracomms.oracle.com"))
     return "DIRECT";
