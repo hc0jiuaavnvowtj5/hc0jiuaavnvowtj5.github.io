@@ -5,6 +5,8 @@ function FindProxyForURL(url, host)
       shExpMatch(host, "people.oracle.com") ||
       shExpMatch(host, "docs.oracle.com") ||
       shExpMatch(host, "oradocs.oracle.com") ||
+      shExpMatch(host, "apexapps.oracle.com") ||
+      shExpMatch(host, "static.ocecdn.oraclecloud.com") ||
       shExpMatch(host, "app.internalcomms.oracle.com") ||
       shExpMatch(host, "app.oracomms.oracle.com"))
     return "DIRECT";
