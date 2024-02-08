@@ -2,6 +2,7 @@ function FindProxyForURL(url, host)
 {
   if (shExpMatch(host, "static.oracle.com") ||
       shExpMatch(host, "mysites.oracle.com") ||
+      shExpMatch(host, "myosearch.oracle.com") ||
       shExpMatch(host, "people.oracle.com") ||
       shExpMatch(host, "docs.oracle.com") ||
       shExpMatch(host, "oradocs.oracle.com") ||
