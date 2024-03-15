@@ -1,6 +1,7 @@
 function FindProxyForURL(url, host)
 {
   if (shExpMatch(host, "static.oracle.com") ||
+      shExpMatch(host, "static.ocecdn.oraclecloud.com") ||
       shExpMatch(host, "signon-int.oracle.com") ||
       shExpMatch(host, "mysites.oracle.com") ||
       shExpMatch(host, "myosearch.oracle.com") ||
@@ -9,7 +10,6 @@ function FindProxyForURL(url, host)
       shExpMatch(host, "oradocs.oracle.com") ||
       shExpMatch(host, "oradocs-prodapp.cec.ocp.oraclecloud.com") ||
       shExpMatch(host, "apexapps.oracle.com") ||
-      shExpMatch(host, "static.ocecdn.oraclecloud.com") ||
       shExpMatch(host, "app.internalcomms.oracle.com") ||
       shExpMatch(host, "app.oracomms.oracle.com"))
     return "DIRECT";
